@@ -59,7 +59,8 @@ if __name__ == '__main__':
     names = json.loads(open(input("Enter json file with names: ")).read())
     emails = json.loads(open(input("Enter json file with emails: ")).read())
     ext = json.loads(open(input("Enter json file with ext formats: ")).read())
-    dictionary = json.loads(open(input("Enter json file with dictionaries: ")).read())
+    dictionary = json.loads(open(input("Enter json file with dictionaries
+                                       : ")).read())
 
     for i in range(threads):
         t = threading.Thread(target=run)
